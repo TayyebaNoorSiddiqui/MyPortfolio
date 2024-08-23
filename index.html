@@ -15,107 +15,115 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f7fa;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
             color: #333;
             line-height: 1.6;
-            padding: 20px;
         }
 
         header {
-            background-color: #0073e6;
-            color: #fff;
-            padding: 20px 0;
+            background: linear-gradient(135deg, #0073e6, #00bfff);
+            color: white;
+            padding: 50px 0;
             text-align: center;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 4px solid #005bb5;
+            position: relative;
+            animation: slideIn 1s ease-out;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
         }
 
         header h2 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 300;
-            margin-top: 5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+            padding: 15px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #0073e6;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+        }
+
+        nav a:hover {
+            background-color: #004999;
+        }
+
+        /* Animated icons */
+        .animated-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            animation: bounce 2s infinite;
         }
 
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px;
         }
 
         section {
             margin-bottom: 40px;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
         }
 
         h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #0073e6;
-            border-bottom: 2px solid #0073e6;
-            padding-bottom: 5px;
-        }
-
-        ul {
-            list-style: none;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        .project-title {
-            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 20px;
             color: #0073e6;
         }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            background-color: #0073e6;
-            color: #fff;
-            border-radius: 10px;
-        }
-
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .skills-container {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .skill-box {
-            width: 45%;
-            margin-bottom: 10px;
-            padding: 15px;
-            background-color: #f1f1f1;
-            border-radius: 5px;
-            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
-        }
-
-        @media (max-width: 768px) {
-            .skills-container {
-                flex-direction: column;
+        /* Keyframes for animations */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
             }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
 
-            .skill-box {
-                width: 100%;
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
             }
         }
     </style>
@@ -127,90 +135,24 @@
         <h2>Software Engineer | Fintech Expert | Database Specialist</h2>
     </header>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="studies.html">Studies</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a results-oriented Software Engineer with a strong focus on database design, fintech solutions, and software development. With hands-on experience in developing complex software applications, I am eager to leverage my skills in a dynamic organization.</p>
-        </section>
-
-        <section id="experience">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <strong>Software Engineer II, Mazik Global (Pvt.) Ltd.</strong> (05/2024 - Present) - Karachi, Pakistan
-                    <ul>
-                        <li>Trained in C#, .NET, JavaScript, VBScript.</li>
-                        <li>Collaborating with US-based clients using Scrum methodology.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Software Developer, Euronet Pakistan (Pvt.) Ltd.</strong> (06/2022 - 05/2024) - Karachi, Pakistan
-                    <ul>
-                        <li>Developed in-house utilities to streamline business processes.</li>
-                        <li>Worked with Agile teams to ensure timely software deployment.</li>
-                        <li>Handled SQL queries, DB2, and created reports using RPG for decision-making.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Software Engineer (Trainee), Softronic Systems (Pvt.) Ltd.</strong> (01/2022 - 05/2022) - Karachi, Pakistan
-                    <ul>
-                        <li>Back-end development using AngularJS, C#, SQL Server.</li>
-                        <li>Created and deployed RDLC reports, stored procedures, and developed UI/UX.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>Professional Projects</h2>
-            <ul>
-                <li>
-                    <span class="project-title">ATM/CDM Addition Console Application</span> - Automated ATM/CDM additions with multiple database file entries.
-                </li>
-                <li>
-                    <span class="project-title">TRX/TXO Web Application</span> - Real-time tender purchase app that updates transactional data. Technologies: .Net, C#, Web API, SQL Server, HTML, CSS.
-                </li>
-                <li>
-                    <span class="project-title">Hospital Partner</span> - Web-based application for hospital management covering admin and doctor domain. Technologies: ASP.Net, SQL Server, HTML, CSS, RDLC Reports.
-                </li>
-            </ul>
-        </section>
-
-        <section id="skills">
-            <h2>Skills & Abilities</h2>
-            <div class="skills-container">
-                <div class="skill-box">
-                    <ul>
-                        <li>RPG, HTML, CSS, AngularJS</li>
-                        <li>SQL Queries & Databases (SQL Server, DB2)</li>
-                        <li>UI/UX Design</li>
-                    </ul>
-                </div>
-                <div class="skill-box">
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Software Development</li>
-                        <li>Data Management (ETL)</li>
-                    </ul>
-                </div>
+        <section>
+            <h2>Welcome to My Portfolio</h2>
+            <p>
+                I am a results-oriented Software Engineer with a strong focus on database design, fintech solutions, and software development. With hands-on experience in developing complex software applications, I am eager to leverage my skills in a dynamic organization.
+            </p>
+            <div class="icon-container">
+                <img src="https://img.icons8.com/clouds/100/000000/programming.png" alt="Programming" class="animated-icon">
             </div>
         </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>BS in Information Technology</strong>, Bahria University, Karachi (2018 - 2022)</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:tayyabasiddiqui2398@gmail.com">tayyabasiddiqui2398@gmail.com</a></p>
-            <p>Phone: <a href="tel:+923320352099">+92 332 035 2099</a></p>
-        </section>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Tayyaba Noor Siddiqui | Software Engineer</p>
-    </footer>
 </body>
 
 </html>
