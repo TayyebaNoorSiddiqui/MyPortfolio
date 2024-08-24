@@ -1,0 +1,45 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa; /* Warm white for a soft, neutral background */
+    color: #333333; /* Deep gray for readability */
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #3e3e3e, #4b4b4b); /* Charcoal and slate gray for a modern, neutral tone */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 4px solid #e07a5f; /* Burnt orange for a bold, professional accent */
+    animation: slideIn 1s ease-out;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #5e3023; /* Deep maroon for a grounded, strong color */
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #e07a5f; /* Burnt orange for buttons */
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #556b2f; /* Forest green for a grounded, professional hover */
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+   
