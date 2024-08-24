@@ -7,6 +7,7 @@ body {
 
 header {
     background: linear-gradient(135deg, #3e3e3e, #4b4b4b); 
+    font-family: 'Raleway', sans-serif;
     color: white;
     padding: 50px 0;
     text-align: center;
