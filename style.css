@@ -18,7 +18,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #9370DB; /* Purple for navbar */
+    background-color: #F8BBD0; /* Soft pink for the navbar */
     padding: 15px 0;
 }
 
@@ -27,7 +27,7 @@ nav a {
     color: white;
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #E6E6FA; /* Lavender background for tabs */
+    background-color: #9370DB; /* Purple background for links */
     border-radius: 25px;
     transition: background-color 0.3s ease;
     font-size: 1.1rem;
@@ -35,7 +35,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #9370DB; /* Purple hover effect */
+    background-color: #4B0082; /* Dark purple hover effect */
 }
 
 section {
