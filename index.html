@@ -1,33 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tayyaba Noor Siddiqui - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Tayyaba Noor Siddiqui - Software Engineer Portfolio</title>
 </head>
-
 <body>
+
+    <!-- Navigation Bar -->
     <header>
         <h1>Tayyaba Noor Siddiqui</h1>
         <h2>Software Engineer | Fintech Expert | Database Specialist</h2>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="studies.html">Studies</a>
-        <a href="experience.html">Experience</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <!-- Sections (Home, About, etc.) -->
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hello! I am Tayyaba Noor Siddiqui, a passionate Software Engineer with a deep interest in education and personal development. With years of experience in software development and teaching, I enjoy solving complex problems and sharing knowledge with others. This portfolio showcases my professional journey, skills, and achievements. Dive in to learn more!</p>
+    </section>
 
-    <div class="container">
-        <section>
-            <h2>Welcome to My Portfolio</h2>
-            <p>Hello, I'm <strong>Tayyaba Noor Siddiqui</strong>, a passionate Software Engineer with a flair for creating innovative solutions. With a strong background in database design, web development, and fintech, I thrive on challenges that push me to learn and grow. My goal is to deliver high-quality, efficient software products that drive success. Outside of coding, I enjoy reading, sketching, and exploring new technologies to expand my skill set. Welcome to my portfolio!</p> <br/>
-            <div class="icon-container">
-                <img src="" alt="Character" class="animated-icon">
-            </div>
-        </section>
-    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>With a background in Information Technology and education, I have built a diverse skill set over the years. My passion for coding and teaching allows me to bridge the gap between technology and learning, making both subjects exciting for myself and others. I have hands-on experience in various programming languages, database management, and web development, all of which have strengthened my ability to work on complex projects efficiently. My dedication to continuous learning drives me to stay updated with the latest technologies and best practices.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Mazik Global</strong> - Software Engineer II
+                <ul>
+                    <li>Worked on VB Script, HTML files, and troubleshooting.</li>
+                    <li>Contributed to software development and automation tools.</li>
+                </ul>
+            </li>
+            <li><strong>Euronet</strong> - Software Engineer
+                <ul>
+                    <li>Focused on software engineering and maintenance projects.</li>
+                </ul>
+            </li>
+            <li><strong>Softronics</strong> - Internship
+                <ul>
+                    <li>Gained experience in programming and software development.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>B.S. in Information Technology</strong> - Bahria University Karachi</li>
+            <li><strong>DAE in CIT</strong> - GCT(G) Karimabad</li>
+            <li><strong>FSc (Pre-Medical)</strong> - SMB Fatima Jinnah</li>
+            <li><strong>Matriculation</strong> - Zubair Public School</li>
+            <li><strong>2-year Alima Course</strong> - Mahd-Ul-Khaleel Madarsa (after FSc)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>I believe in working on practical projects that not only showcase my skills but also offer solutions to real-world problems. I have developed multiple applications, websites, and automated solutions in my career, each project enhancing my expertise in coding, design, and implementation. Some of the key projects I’ve worked on include complex VB Script automation tools, responsive web design, and data-driven applications. Feel free to explore the Projects section to see some of my most notable work.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>I am proficient in several programming languages, web development frameworks, and tools, including:</p>
+        <ul>
+            <li>VB Script</li>
+            <li>HTML/CSS</li>
+            <li>Troubleshooting</li>
+            <li>Database Management</li>
+            <li>Microsoft Office Suite</li>
+            <li>Web Development</li>
+            <li>Calligraphy & Sketching</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you’d like to connect with me or have any inquiries, feel free to reach out through my email or phone. I am always open to discussing new opportunities, collaborations, or sharing knowledge!</p>
+        <p>Email: <a href="mailto:tayyyabasiddiqui2398@gmail.com">tayyyabasiddiqui2398@gmail.com</a></p>
+        <p>Phone: 03320352099</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Tayyaba Noor Siddiqui - All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Script for nav highlight on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.pageYOffset >= sectionTop - 50) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
 </body>
-
 </html>
