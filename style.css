@@ -1,14 +1,14 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F4F1DE; /* Light Beige background */
-    color: #333333; /* Dark text */
+    background-color: #fde2e4; 
+    color: #82c0cc; 
     line-height: 1.6;
 }
 
 header {
     background: linear-gradient(135deg, #E07A5F, #3D5A80); /* Terracotta Red to Muted Teal gradient */
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
+    font-family: 'Diastema', sans-serif;
+    color: 432534;
     padding: 50px 0;
     text-align: center;
     border-bottom: 4px solid #F4F1DE; /* Light Beige border */
