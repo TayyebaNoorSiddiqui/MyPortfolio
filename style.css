@@ -1,66 +1,63 @@
+/* General Body Styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fafafa;
-    color: #333333;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #E6E6FA; /* Lavender background */
+    color: #4B0082; /* Dark purple for text */
+    margin: 0;
+    padding: 0;
 }
 
+/* Header Styling */
 header {
-    background: linear-gradient(135deg, #3e3e3e, #4b4b4b); 
-    font-family: 'Bebas Neue', sans-serif;
+    background-color: #9370DB; /* Purple background */
     color: white;
-    padding: 50px 0;
     text-align: center;
-    border-bottom: 4px solid #e07a5f; 
-    animation: slideIn 1s ease-out;
+    padding: 20px;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #5e3023;
-    padding: 15px 0;
+h1, h2 {
+    color: #4B0082; /* Dark purple for headings */
 }
 
-nav a {
-    text-decoration: none;
+/* Section Styling */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    background-color: #F8BBD0; /* Baby Pink for section background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+    background-color: #9370DB; /* Purple */
     color: white;
     padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #e07a5f; 
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-    font-size: 1.1rem;
-    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-nav a:hover {
-    background-color: #556b2f;
+button:hover {
+    background-color: #4B0082; /* Darker purple on hover */
 }
 
-section {
-    margin-bottom: 40px;
-    background-color: #fde4e4;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+/* Links Styling */
+a {
+    color: #9370DB; /* Purple links */
+    text-decoration: none;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #8d6b4f; 
+a:hover {
+    color: #4B0082; /* Dark purple on hover */
 }
 
-@keyframes slideIn {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+/* Skills List Styling */
+ul {
+    list-style-type: square;
+    color: #4B0082;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
