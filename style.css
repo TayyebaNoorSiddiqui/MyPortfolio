@@ -54,7 +54,7 @@ section {
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #62929E; /* Muted Teal for headings */
+    color: #335c67; /* Muted Teal for headings */
 }
 
 @keyframes slideIn {
